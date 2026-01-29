@@ -21,5 +21,20 @@ rad.json
 *.txt
 *.exe
 *.out
+settings.json
 #Test results file
 TestResults.xml
+rough.c
+# Step 1: Ignore everything
+*
+
+# Step 2: But don't ignore folders
+!*/
+
+# Step 3: And don't ignore files with extensions (like .c, .py, .md)
+!*.*
+
+# Step 4: Specifically allow the README and .gitignore itself
+!.gitignore
+!README.md
+.vscode
