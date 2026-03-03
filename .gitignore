@@ -33,7 +33,7 @@ rough.c
 
 # Step 3: And don't ignore files with extensions (like .c, .py, .md)
 !*.*
-
+rough.c
 # Step 4: Specifically allow the README and .gitignore itself
 !.gitignore
 !README.md
