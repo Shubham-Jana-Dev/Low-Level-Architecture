@@ -12,13 +12,14 @@ public:
     string getName(){
         return Name;
     }
-    void setComapany(string company){
+    void setCompany(string company){
         Company = company;
     }
     string getCompany(){
         return Company;
     }
     void setAge(int age){
+        if(age>=18)
         Age = age;
     }
     int getAge(){
@@ -37,7 +38,8 @@ public:
 };
 int main(){
     Employee employee1 = Employee("Shubham","Not Yet",19);
-
+    Employee employee2 = Employee("Sukamal","Wipro",22);
+    Employee employee3 = Employee(" "," ",0);
     // Employee employee1;
     // employee1.Name = "Shubham";
     // employee1.Company = "Not yet";
@@ -51,6 +53,14 @@ int main(){
     // employee2.IntroduceYourself();
     employee1.setAge(23);
     cout<<employee1.getName() << " is "<<employee1.getAge() << " years old." << endl;
-    employee1.setComapany("HCL");
+    employee1.setCompany("HCL");
     cout << employee1.getName() << " works in " << employee1.getCompany() << endl;
+    employee2.setAge(16);
+
+    employee3.setName("Nikhilesh");
+    employee3.setAge(25);
+    employee3.setCompany("Google");
+    cout << employee2.getName() << " is " << employee2.getAge() << " years old." << "\n" << "He works in" << employee2.getCompany() << endl;
+    cout << employee3.getName() << " is " << employee3.getAge() << " years old." << "\n" << employee3.getName() << " works in " << employee3.getCompany() << endl;
+    // cout << employee4.getName() << endl;
 }
