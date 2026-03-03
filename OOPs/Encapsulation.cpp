@@ -19,7 +19,6 @@ public:
         return Company;
     }
     void setAge(int age){
-        if(age>=18)
         Age = age;
     }
     int getAge(){
@@ -33,13 +32,19 @@ public:
     Employee(string name, string company, int age){ // it's call the object constructor 
         Name = name;
         Company = company;
+        if(age>=18){
         Age = age;
+        }
+        else{
+            Age = -1;
+           cout << age << " is in not valid for " << name << endl;
+        }
     }  // if we remove this block then we have to uncoment the initilisation lins billow
 };
 int main(){
     Employee employee1 = Employee("Shubham","Not Yet",19);
     Employee employee2 = Employee("Sukamal","Wipro",22);
-    Employee employee3 = Employee(" "," ",0);
+    Employee employee3 = Employee("Nikhilesh"," ",12);
     // Employee employee1;
     // employee1.Name = "Shubham";
     // employee1.Company = "Not yet";
@@ -58,7 +63,7 @@ int main(){
     employee2.setAge(16);
 
     employee3.setName("Nikhilesh");
-    employee3.setAge(25);
+    // employee3.setAge(25);
     employee3.setCompany("Google");
     cout << employee2.getName() << " is " << employee2.getAge() << " years old." << "\n" << "He works in" << employee2.getCompany() << endl;
     cout << employee3.getName() << " is " << employee3.getAge() << " years old." << "\n" << employee3.getName() << " works in " << employee3.getCompany() << endl;
