@@ -1,0 +1,14 @@
+The Goal: Create a BankAccount class where the balance cannot be manipulated directly.
+
+Private Members: OwnerName (string), Balance (double).
+
+Constructor: Initialize the name and a starting balance.
+
+Rules (The Encapsulation):
+
+deposit(double amount): Should only work if the amount is positive.
+
+withdraw(double amount): Should only work if the amount is positive AND 
+if the user has enough money in the balance. If they don't, print "Insuﬃcient funds!"
+
+Requirement: The user should never be able to set the balance to a negative number.
