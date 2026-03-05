@@ -50,6 +50,8 @@ public:
 };
 int main(){
     Employee emp1 = Employee("Shubham","Wipro",29);
+    Employee emp2 = Employee("Rohit","TCS",45);
     emp1.AskForPromotion();
+    emp2.AskForPromotion();
     return 0;
 }
