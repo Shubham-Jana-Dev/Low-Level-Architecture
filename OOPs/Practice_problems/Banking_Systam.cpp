@@ -64,6 +64,7 @@ int main(){
     owner account_Holder1 = owner("Sneha",120000.000);
     account_Holder1.setDeposit(57000.000);
     account_Holder1.setWithdraw(4530.543);
+    owner account_Holder2 = owner("Shubham",162434990);
     //owner account_Holder1;
     //account_Holder1.Name = "Shneha";
 
